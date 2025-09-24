@@ -6,10 +6,10 @@ import ScrollToTop from "./ScrollToTop";
 
 const RootLayout = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-[#0a0118] via-[#120327] to-black text-white">
       <ScrollToTop />
       <NavBar />
-      <main className="flex-grow">
+      <main className="flex-1">
         <Outlet />
       </main>
       <Footer />

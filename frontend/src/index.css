@@ -1,0 +1,25 @@
+@import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+@theme {
+    --color-bghero: #000000;
+    --color-bghero2:rgb(40, 41, 40);
+    --color-bgprimary: oklch(0.85 0.05 260);
+    --color-blue600: #2563eb;
+    --color-gray600: #4b5563;
+    --color-purple600: #9333ea;
+
+    --color-bgsecondary: oklch(0.9 0.03 260);
+    --color-textmain: oklch(0.9 0.03 260);
+    --color-textprimary: oklch(0.2 0.1 260);
+    --color-textsecondary: oklch(0.4 0.05 260);
+    --color-accent: oklch(0.6 0.2 320);
+    --color-accent-dark: oklch(0.5 0.25 320);
+    --color-border: oklch(0.7 0.03 260);
+    --color-txthover: #a78bf4;
+    --color-hometxt: linear-gradient(90deg, #E59CFF 0.01%, #BA9CFF 50.01%, #9CB2FF 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+
+}
+.bg-bgheroasdfghj {
+    background-color: rgb(40, 41, 40)
+}
