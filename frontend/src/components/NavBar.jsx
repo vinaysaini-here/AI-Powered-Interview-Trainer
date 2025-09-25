@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { NavLink, useNavigate } from "react-router-dom";
 import Button from "./Utils/Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="px-6 py-4 flex justify-between items-center bg-bghero text-textmain relative">
@@ -31,7 +33,13 @@ export default function Navbar() {
 
       {/* Desktop Buttons */}
       <div className="hidden md:flex space-x-3">
-        <Button variant="secondary">Sign In</Button>
+        <Button
+          onClick={() => navigate("/login")}
+          type="button"
+          variant="secondary"
+        >
+          Sign In
+        </Button>
         <Button variant="primary">Get Started</Button>
       </div>
 
@@ -62,7 +70,13 @@ export default function Navbar() {
               Contact us
             </a>
             <div className="flex space-x-3 mt-4">
-              <Button variant="secondary">Sign In</Button>
+              <Button
+                onClick={() => navigate("/login")}
+                type="button"
+                variant="secondary"
+              >
+                Sign In
+              </Button>
               <Button variant="primary">Get Started</Button>
             </div>
           </nav>
