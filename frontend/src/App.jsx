@@ -24,9 +24,9 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="user" element={<UserDashboard />}>
-            <Route path="/user/" element={<UserHome />} />
+            <Route path="/user/home" element={<UserHome />} />
             <Route path="/user/practice" element={<UserPractice />} />
-            <Route path="/user/question" element={<UserQuestion />} />
+            <Route path="/user/question-bank" element={<UserQuestion />} />
             <Route path="/user/communtiy" element={<UserCommunity />} />
           </Route>
         </Route>
