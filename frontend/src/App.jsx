@@ -15,6 +15,7 @@ import UserHome from "./components/User/UserHome";
 import UserPractice from "./components/User/UserPractice";
 import UserQuestion from "./components/User/UserQuestion";
 import UserCommunity from "./components/User/UserCommunity";
+import AdminDashboard from "./pages/AdminDashboard";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -28,6 +29,12 @@ const App = () => {
             <Route path="/user/practice" element={<UserPractice />} />
             <Route path="/user/question-bank" element={<UserQuestion />} />
             <Route path="/user/communtiy" element={<UserCommunity />} />
+          </Route>
+          <Route path="admin" element={<AdminDashboard />}>
+            {/* <Route path="/admin/" element={<UserHome />} /> */}
+            {/* <Route path="/admin/" element={<UserPractice />} /> */}
+            {/* <Route path="/admin/" element={<UserQuestion />} /> */}
+            {/* <Route path="/admin/" element={<UserCommunity />} /> */}
           </Route>
         </Route>
         <Route path="/login" element={<Login />} />

@@ -1,20 +1,29 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome, FaBook, FaUsers, FaClipboardList, FaBars } from "react-icons/fa";
+import {
+  FaHome,
+  FaBook,
+  FaUsers,
+  FaBars,
+  FaCog,
+  FaVideo,
+  FaTachometerAlt,
+} from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 
-const Sidebar = () => {
+const AdminSidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const navItems = [
     { to: "/user/home", label: "Home", icon: <FaHome /> },
-    { to: "/user/practice", label: "Practice", icon: <FaClipboardList /> },
+    { to: "/user/practice", label: "Practice", icon: <FaVideo /> },
     {
       to: "/user/question-bank",
       label: "Question bank",
-      icon: <FaBook />,
+      icon: <FaUsers />,
     },
-    { to: "/user/communtiy", label: "Community", icon: <FaUsers /> },
+    { to: "/user/communtiy", label: "Community", icon: <FaBook /> },
+    { to: "/user/communtiy", label: "Community", icon: <FaCog /> },
   ];
 
   return (
@@ -84,4 +93,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default AdminSidebar;
