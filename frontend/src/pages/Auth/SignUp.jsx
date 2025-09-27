@@ -83,7 +83,7 @@ export default function Signup() {
       {/* Right Panel (hidden on mobile) */}
       <div className="hidden md:flex flex-1 items-center justify-center bg-black relative">
         <img
-        //   src="https://via.placeholder.com/600x800" 
+          //   src="https://via.placeholder.com/600x800"
           alt="Preview"
           className="w-full h-full object-cover"
         />

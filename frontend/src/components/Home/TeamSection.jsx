@@ -6,7 +6,8 @@ const teamMembers = [
   {
     name: "Kartik Mamgain",
     role: "I am design at chef, where he is making it possible to order.",
-    color: "md:border-r-red-500 md:border-b-purple-500 md:border-b-3 md:border-r-3",
+    color:
+      "md:border-r-red-500 md:border-b-purple-500 md:border-b-3 md:border-r-3",
   },
   {
     name: "J K Saini",

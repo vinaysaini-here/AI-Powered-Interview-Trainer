@@ -10,6 +10,11 @@ import RootLayout from "./layout/RootLayout";
 import Home from "./pages/Home";
 import SignUp from "./pages/Auth/SignUp";
 import Login from "./pages/Auth/Login";
+import UserDashboard from "./pages/UserDashboard";
+import UserHome from "./components/User/UserHome";
+import UserPractice from "./components/User/UserPractice";
+import UserQuestion from "./components/User/UserQuestion";
+import UserCommunity from "./components/User/UserCommunity";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -18,10 +23,16 @@ const App = () => {
         <Route path="/" element={<RootLayout />}>
           <Route index element={<Home />} />
           <Route path="*" element={<Navigate to="/" replace />} />
-          {/* <Route path="members" element={<Members />} /> */}
+          <Route path="user" element={<UserDashboard />}>
+            <Route path="/user/" element={<UserHome />} />
+            <Route path="/user/practice" element={<UserPractice />} />
+            <Route path="/user/question" element={<UserQuestion />} />
+            <Route path="/user/communtiy" element={<UserCommunity />} />
+          </Route>
         </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/user" element={<UserDashboard />} />
       </>
     )
   );

@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Banner() {
   return (
     <section className="relative w-full bg-gradient-to-r from-[#0f001f] via-black to-[#0f001f] py-20 flex items-center justify-center">
