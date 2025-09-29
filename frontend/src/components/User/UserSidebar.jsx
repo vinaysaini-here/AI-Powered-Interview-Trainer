@@ -76,7 +76,8 @@ const Sidebar = () => {
             onClick={() => setSidebarOpen(false)}
           >
             <CgProfile size={20} />
-            <span>Profile</span>
+            <span>
+              <NavLink to={"/user/porfile"}>Profile</NavLink></span>
           </div>
         </div>
       </div>
