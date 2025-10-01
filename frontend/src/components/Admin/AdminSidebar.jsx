@@ -15,15 +15,15 @@ const AdminSidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const navItems = [
-    { to: "/user/home", label: "Home", icon: <FaHome /> },
-    { to: "/user/practice", label: "Practice", icon: <FaVideo /> },
+    { to: "/admin/home", label: "Home", icon: <FaHome /> },
+    { to: "/admin/interviews", label: "Interviews", icon: <FaVideo /> },
     {
-      to: "/user/question-bank",
-      label: "Question bank",
+      to: "/admin/candidates",
+      label: "Candidates",
       icon: <FaUsers />,
     },
-    { to: "/user/communtiy", label: "Community", icon: <FaBook /> },
-    { to: "/user/communtiy", label: "Community", icon: <FaCog /> },
+    { to: "/admin/question-bank", label: "Question Bank", icon: <FaBook /> },
+    { to: "/admin/settings", label: "Settings", icon: <FaCog /> },
   ];
 
   return (

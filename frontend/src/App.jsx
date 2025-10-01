@@ -18,6 +18,11 @@ import UserCommunity from "./components/User/UserCommunity";
 import AdminDashboard from "./pages/AdminDashboard";
 import UserProfile from "./components/User/UserProfile";
 import UserEditProfile from "./components/User/UserEditProfile";
+import AdminHome from "./components/Admin/AdminHome";
+import AdminCandidates from "./components/Admin/AdminCandidates";
+import AdminInterviews from "./components/Admin/AdminInterviews";
+import AdminQuestionBank from "./components/Admin/AdminQuestionBank";
+import AdminSettings from "./components/Admin/AdminSettings";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -35,10 +40,14 @@ const App = () => {
             <Route path="/user/edit-porfile" element={<UserEditProfile />} />
           </Route>
           <Route path="admin" element={<AdminDashboard />}>
-            {/* <Route path="/admin/" element={<UserHome />} /> */}
-            {/* <Route path="/admin/" element={<UserPractice />} /> */}
-            {/* <Route path="/admin/" element={<UserQuestion />} /> */}
-            {/* <Route path="/admin/" element={<UserCommunity />} /> */}
+            <Route path="/admin/home" element={<AdminHome />} />
+            <Route path="/admin/interviews" element={<AdminInterviews />} />
+            <Route path="/admin/candidates" element={<AdminCandidates />} />
+            <Route
+              path="/admin/question-bank"
+              element={<AdminQuestionBank />}
+            />
+            <Route path="/admin/settings" element={<AdminSettings />} />
           </Route>
         </Route>
         <Route path="/login" element={<Login />} />
