@@ -14,21 +14,21 @@ export default function Navbar() {
 
       {/* Desktop Menu */}
       <nav className="hidden md:flex space-x-6 text-sm font-medium">
-        <a href="#" className="hover:text-txthover">
+        <NavLink to={"/"} className="hover:text-txthover">
           Home
-        </a>
+        </NavLink>
         <a href="#" className="hover:text-txthover">
           Members
         </a>
-        <a href="#" className="hover:text-txthover">
+        <NavLink to={"/"} className="hover:text-txthover">
           Documents
-        </a>
-        <a href="#" className="hover:text-txthover">
+        </NavLink>
+        <NavLink to={"/"} className="hover:text-txthover">
           About us
-        </a>
-        <a href="#" className="hover:text-txthover">
+        </NavLink>
+        <NavLink to={"/"} className="hover:text-txthover">
           Contact us
-        </a>
+        </NavLink>
       </nav>
 
       {/* Desktop Buttons */}
